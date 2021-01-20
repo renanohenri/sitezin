@@ -6,7 +6,7 @@ body ,html{
     font-size: 15px;
 }
 
-h1,h2{
+h1,h2,#equipe h3{
     font-family: 'Lora', serif;
 }
 
@@ -142,5 +142,9 @@ h5{
 #sobre-nos .bd{
     border-top: solid 3px #ffffff;
     border-left: solid 3px #ffffff;
+}
+
+#equipe i{
+    padding-left: 10px;
 }
 

@@ -1,6 +1,17 @@
 body ,html{
-    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
     color: #ffffff;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+h1,h2{
+    font-family: 'Lora', serif;
+}
+
+h5{
+    font-weight: 100;
 }
 
 #header {
@@ -25,18 +36,27 @@ body ,html{
     color: #ffffff;
 }
 
+.nav-link:hover{
+    color: #ffffff;
+}
+
 .btn-navbar{
     padding-left: 2rem;
 }
 
 .btn-custom{
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     padding-bottom: 0.8rem;
     padding-top: 0.8rem;
-    border: 1px solid #ffffff;
+    border: 0.2px solid #ffffff;
     text-decoration: none;
     color: #ffffff;
+}
+
+.btn-custom:hover{
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 #header .nav-item{
@@ -48,25 +68,79 @@ body ,html{
 }
 
 #titulo{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #banner{
     background-image: url(../assets/img/bg.jpg);
     height: 100vh;
+    box-shadow: inset 300px 400px 60px rgba(0, 0, 0, 0.6);
 }
 
 #slider{
-    height: 80%;
+    height: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#area-atuacao{
-    height: 100vh;
+#area-atuacao, #equipe{
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #4F4F4F;
 }
+
+#area-atuacao .row{
+    font-weight: 100;
+}
+
+#area-atuacao p{
+    font-weight: 400;
+}
+
+#area-atuacao i{
+    font-size: 6rem;
+    font-weight: 300;
+    color: #56C2FF;
+}
+
+.bd{
+    margin-left: -1rem;
+    width: 1rem;
+    height: 1rem;
+    border-top: solid 3px #4F4F4F;
+    border-left: solid 3px #4F4F4F;
+}
+
+#sobre-nos{
+    height: auto;
+}
+
+#sobre-nos .row{
+    width: 100%;
+    padding: 0;
+}
+
+#sobre-nos .col-md-6{
+    padding: 0;
+}
+
+#sobre-nos .about{
+    padding: 5rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    background-color: #3D3D3D;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#sobre-nos .bd{
+    border-top: solid 3px #ffffff;
+    border-left: solid 3px #ffffff;
+}
+

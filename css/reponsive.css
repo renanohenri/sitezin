@@ -8,3 +8,36 @@
     }
 
 }
+
+@media (max-width: 768px) {
+    #header .navbar-collapse{
+        width: 100%;
+    }
+
+    .btn-navbar{
+        padding: 0;
+    }
+
+    #area-atuacao, #equipe, #blog, #contato{
+        height: auto;
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 1200px) { 
+    #sobre-nos .row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #escritorio {
+        padding: 0;
+        width: 100%;
+        order: 2;
+    }
+    
+    #about {
+        width: 100%;
+        order: 3;
+    }
+}

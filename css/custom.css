@@ -10,7 +10,7 @@ h1,h2,#equipe h3{
     font-family: 'Lora', serif;
 }
 
-h5{
+#sobre-nos h5{
     font-weight: 100;
 }
 
@@ -26,6 +26,19 @@ h5{
     color: #000;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
     z-index: 99999;
+}
+
+#header .navbar-toggler{
+    border-color: #ffffff;
+    
+}
+
+#header .navbar-toggler-icon{
+    color: #ffffff;
+}
+
+#header .navbar-toggler-icon:focus{
+    box-shadow: none;
 }
 
 #header .navbar-collapse{
@@ -71,6 +84,7 @@ h5{
     font-weight: 700;
     padding-top: 20px;
     padding-bottom: 20px;
+    color: #ffffff;
 }
 
 #banner{
@@ -86,7 +100,7 @@ h5{
     justify-content: center;
 }
 
-#area-atuacao, #equipe{
+#area-atuacao, #equipe, #blog{
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -121,6 +135,7 @@ h5{
 }
 
 #sobre-nos .row{
+    height: auto;
     width: 100%;
     padding: 0;
 }
@@ -129,11 +144,11 @@ h5{
     padding: 0;
 }
 
-#sobre-nos .about{
+#about{
     padding: 5rem;
     color: #ffffff;
-    font-size: 1.5rem;
-    background-color: #3D3D3D;
+    /* font-weight: 300; */
+    background-color: #4F4F4F;
     display: flex;
     align-items: center;
     justify-content: center
@@ -147,4 +162,121 @@ h5{
 #equipe i{
     padding-left: 10px;
 }
+
+#blog .btn-custom{
+    border-color: #4F4F4F;
+    color: #4F4F4F;
+}
+
+#blog .btn-custom:hover{
+    color: #4F4F4F;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#contato{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #4F4F4F;
+    background-color: #F2F6FD;
+}
+
+#sobre-nos .row{
+    margin: 0;
+}
+
+#contato .row{
+    height: 100%;
+    width: 100%;
+    margin-left: 6.7%;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+}
+
+#contato textarea{
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #607290;
+}
+
+#contato input{
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #607290;
+}
+
+#contato input:focus{
+    box-shadow: none;
+}
+
+#contato textarea:focus{
+    box-shadow: none;
+}
+
+#btn-enviar{
+    display: flex;
+    color: #ffffff;
+    background-color: #607290;
+}
+
+#btn-enviar:hover{
+    background-color: #536179;
+}
+
+#btn-enviar a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+#info h4{
+    font-weight: 300;
+}
+
+#info label{
+    font-weight: 500;
+    color: #536179;
+}
+
+#photo{
+    height: 100%;
+    padding-right: 0;
+    background: url(../assets/img/teste.jpg) no-repeat right;
+    background-size: contain;
+    
+}
+
+#footer{
+    height: auto;
+    background-color: #4F4F4F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+#footer h5, #footer h6{
+    color: #ADADAD;
+    font-weight: 300;
+}
+
+#footer .footer-custom-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 

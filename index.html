@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
-    <title>Advocacia</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&display=swap"
@@ -21,6 +20,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/nice-select.css">
+    <title>Advocacia</title>
 </head>
 
 <body>
@@ -32,10 +33,10 @@
                     <a class="navbar-brand" href="#">
                         <img src="assets/img/logo.svg" alt="" class="img-fluid" />
                     </a>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button id="btn-menu" class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon navbar-dark"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav d-flex align-items-center">
@@ -52,10 +53,10 @@
                                 <a class="nav-link" href="#equipe">Equipe</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link" href="#blog">Blog</a>
                             </li>
                             <li class="btn-navbar d-flex align-items-center">
-                                <a class="btn-custom" href="#" tabindex="-1" aria-disabled="true">Contato</a>
+                                <a class="btn-custom" href="#contato" tabindex="-1" aria-disabled="true">Contato</a>
                             </li>
                         </ul>
                     </div>
@@ -72,7 +73,8 @@
                         <h1 id="titulo">Somos uma escritório de especialistas em Direito do Consumidor e
                             Empresarial</h1>
                         <div class="d-flex align-items-center">
-                            <a class="btn-custom" href="#" tabindex="-1" aria-disabled="true">Entre em contato</a>
+                            <a class="btn-custom" href="#contato" tabindex="-1" aria-disabled="true">Entre em
+                                contato</a>
                         </div>
                     </div>
                 </div>
@@ -132,15 +134,15 @@
             </div>
         </div>
         <!--AREAS DE ATUACAO-->
-
+        <!-- <img src=" ./assets/img/escritorio.jpg" alt="" class="img-fluid"> -->
         <!--SOBRE NÓS-->
         <div id="sobre-nos">
             <div class="row">
-                <div class="col-md-6">
+                <div id="escritorio" class="col-md-6">
                     <img src=" ./assets/img/escritorio.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="col-md-6 about">
-                    <div>
+                <div id="about" class="col-md-6 ">
+                    <div class="p-5">
                         <div class="bd"></div>
                         <h2>Sobre o escritório</h2>
                         <h5>Escritório Rezende Neiva advogados, desde 2015, referência em qualidade com ética,
@@ -155,7 +157,7 @@
         </div>
         <!--SOBRE NÓS-->
 
-        <!--AREAS DE ATUACAO-->
+        <!--EQUIPE-->
         <div id="equipe">
             <div class="container">
                 <div class="bd"></div>
@@ -194,15 +196,149 @@
                 </div>
             </div>
         </div>
-        <!--AREAS DE ATUACAO-->
+        <!--EQUIPE-->
 
+        <!--BLOG-->
+        <div id="blog">
+            <div class="container">
+                <div class="bd"></div>
+                <div class="d-flex justify-content-between">
+                    <h2>Últimas do blog</h2>
+                    <div class="d-flex align-items-center">
+                        <a class="btn-custom" href="#" tabindex="-1" aria-disabled="true">Acesse o blog</a>
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <div class="col-md-4">
+                        <img src="./assets/img/blog1.png" alt="" class="img-fluid">
+                        <div class="pt-2">
+                            <h4>Medidas jurídicas que empresesas podem adotar durante a COVID-19</h4>
+                            <p>16 de Janeiro de 2021</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/img/blog2.jpg" alt="" class="img-fluid">
+                        <div class="pt-2">
+                            <h4>Dúvidas trabalhistas sobre a COVID-19; As 5 principais que você deve conhecer</h4>
+                            <p>16 de Janeiro de 2021</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/img/blog3.jpeg" alt="" class="img-fluid">
+                        <div class="pt-2">
+                            <h4>Medida provisória 936/2020 - Relação entre empregador e empregado</h4>
+                            <p>16 de Janeiro de 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--BLOG-->
+
+        <!--CONTATO-->
+        <div id="contato">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="bd"></div>
+                    <h2>Entre em contato</h2>
+                    <form>
+                        <div class="form-group pt-2">
+                            <label for=" exampleFormControlSelect1">Assunto</label>
+                            <div class="pb-4" style="height: 50px;">
+                                <select class="wide" id="exampleFormControlSelect1">
+                                    <option>Consulta</option>
+                                    <option>Dúvidas</option>
+                                    <option>Outros</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group pb-2">
+                            <label for="exampleFormControlInput1" class="pb-2">Nome</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="form-group pb-2">
+                            <label for="exampleFormControlInput1">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        </div>
+                        <div class="form-group pb-2">
+                            <label for="exampleFormControlInput1">Telefone</label>
+                            <input type="email" class="form-control" id="telefone">
+                        </div>
+                        <div class="form-group pb-2">
+                            <label for="exampleFormControlInput1">Celular</label>
+                            <input type="email" class="form-control" id="celular">
+                        </div>
+                        <div class="form-group pb-3">
+                            <label for="exampleFormControlTextarea1">Mensagem</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="d-flex align-items-center" id="btn-enviar">
+                            <a class="btn-custom" id="btn-enviar" href="#" tabindex="-1" aria-disabled="true">Enviar</a>
+                        </div>
+                    </form>
+                </div>
+                <div id="info" class="col-md-4">
+                    <div class="pt-2 pb-2">
+                        <label for="">Telefone</label>
+                        <h4>(43) 3344-2630</h4>
+                    </div>
+                    <div class="pt-2 pb-2">
+                        <label for="">Whatsapp</label>
+                        <h4>(43) 99652-5073</h4>
+                    </div>
+                    <div class="pt-2 pb-2">
+                        <label for="">E-mail</label>
+                        <h4>contato@rezendeneiva.adv.br</h4>
+                    </div>
+                    <div class="pt-2 pb-2">
+                        <label for="">E-mail</label>
+                        <h4>contato@rezendeneiva.adv.br</h4>
+                    </div>
+                    <div class="pt-2 pb-2">
+                        <label for="">Endereço</label>
+                        <h4>Av. Ayrton Senna da Silva, 1005, Sala 1904, 19º Andar, Ed. Palhano Square Garden Gleba
+                            Palhano, Londrina-PR</h4>
+                    </div>
+                </div>
+                <div id="photo" class="col-md-3 pr-0">
+                </div>
+            </div>
+        </div>
+        <!--CONTATO-->
+
+        <!--FOOTER-->
+        <div id="footer">
+            <img src="./assets/img/logo.svg" alt="" class="pt-5">
+            <div class="pt-4 footer-custom-div">
+                <h5>(43) 3344-2630 | (43) 99652-5073</h5>
+                <h5>contato@rezendeneiva.adv.br</h5>
+            </div>
+            <div class="pt-4 footer-custom-div">
+                <h5>Av.Ayrton Senna da Silva, 1055, Sala 1904, 19º Andar</h5>
+                <h5>Ed. Palhano Square Garden, Gleba Palhano, Londrina-PR</h5>
+            </div>
+            <div class="pt-5 pb-3 footer-custom-div">
+                <h6>©2020 Rezende Neiva Advogados Associados. All Rights Reserved.</h6>
+                <h6>Desenvolvido por <b>Danyllo Lisboa</b></h6>
+            </div>
+        </div>
+        <!--SOBRE NÓS-->
     </div>
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script src="./js/index.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="./jquery-nice-select-1.1.0/js/jquery.js"></script>
+    <script src="./jquery-nice-select-1.1.0/js/jquery.nice-select.js"></script>
+
 </body>
 
 </html>

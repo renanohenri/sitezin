@@ -25,6 +25,11 @@
 }
 
 @media (max-width: 1200px) { 
+    #slider .row{
+        margin-top: auto;
+    }
+
+
     #sobre-nos .row {
         display: flex;
         flex-direction: column;

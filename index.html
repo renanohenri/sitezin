@@ -19,19 +19,62 @@
         href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Roboto+Condensed:wght@300;400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/nice-select.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@600;700&display=swap" rel="stylesheet">
     <title>Advocacia</title>
 </head>
 
 <body>
-    <!--HEADER-->
     <div id="banner">
+        <!--HEADER-->
         <div id="header">
             <div class="container">
                 <nav class="navbar navbar-expand-lg pt-3 justify-content-between d-flex align-items-center">
-                    <a class="navbar-brand" href="#">
-                        <img src="assets/img/logo.svg" alt="" class="img-fluid" />
+                    <a style="width: 255px;" class="navbar-brand" href="#">
+                        <img id="logo" src="assets/img/logo-rezende-neiva-advogados-white.svg" alt=""
+                            class="img-fluid" />
+                    </a>
+                    <button id="btn-menu" class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon navbar-dark"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav d-flex align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#area-atuacao">Áreas de atuação</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobre-nos">Sobre nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#equipe">Equipe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog">Blog</a>
+                            </li>
+                            <li class="btn-navbar d-flex align-items-center">
+                                <a class="btn-custom" href="#contato" tabindex="-1" aria-disabled="true">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--HEADER-->
+        <!--HEADER-->
+        <div id="header-alt">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg pt-3 justify-content-between d-flex align-items-center">
+                    <a style="width: 255px;" class="navbar-brand" href="#">
+                        <img id="logo" src="assets/img/logo-rezende-neiva-advogados-color.svg" alt=""
+                            class="img-fluid" />
                     </a>
                     <button id="btn-menu" class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -70,7 +113,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 justify-content-between ">
-                        <h1 id="titulo">Somos uma escritório de especialistas em Direito do Consumidor e
+                        <h1 id="titulo">Somos um escritório de especialistas em Direito do Consumidor e
                             Empresarial</h1>
                         <div class="d-flex align-items-center">
                             <a class="btn-custom" href="#contato" tabindex="-1" aria-disabled="true">Entre em
@@ -81,250 +124,271 @@
             </div>
         </div>
         <!--SLIDER-->
-
-        <!--AREAS DE ATUACAO-->
-        <div id="area-atuacao">
-            <div class="container">
-                <div class="bd"></div>
-                <h2>Como podemos de ajudar?</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <i class="bi bi-person"></i>
-                        <h4>DIREITO CÍVEL</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis
-                            condimentum. Aliquam nonummy auctor massa.</p>
-                        <h6>— Divórcio de divisão de bens</h6>
-                        <h6>— Guarda civil de dependentes</h6>
-                        <h6>— Divórcio de divisão de bens</h6>
-                        <h6>— Guarda civil de dependentes</h6>
-                        <h6>— Divórcio de divisão de bens</h6>
-                        <h6>— Guarda civil de dependentes</h6>
-                        <h6>— Divórcio de divisão de bens</h6>
-                        <h6>— Guarda civil de dependentes</h6>
-                    </div>
-                    <div class="col-md-4">
-                        <i class="bi bi-cart2"></i>
-                        <h4>DIREITO DO CONSUMIDOR</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis
-                            condimentum. Aliquam nonummy auctor massa.</p>
-                        <h6>— Divórcio de divisão de bens</h6>
-                        <h6>— Guarda civil de dependentes</h6>
-                        <h6>— Divórcio de divisão de bens</h6>
-                        <h6>— Guarda civil de dependentes</h6>
-                        <h6>— Divórcio de divisão de bens</h6>
-                        <h6>— Guarda civil de dependentes</h6>
-                        <h6>— Divórcio de divisão de bens</h6>
-                        <h6>— Guarda civil de dependentes</h6>
-                    </div>
-                    <div class="col-md-4">
-                        <i class="bi bi-bag"></i>
-                        <h4>DIREITO EMPRESARIAL</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis
-                            condimentum. Aliquam nonummy auctor massa.</p>
-                        <h6>— Divórcio de divisão de bens</h6>
-                        <h6>— Guarda civil de dependentes</h6>
-                        <h6>— Divórcio de divisão de bens</h6>
-                        <h6>— Guarda civil de dependentes</h6>
-                        <h6>— Divórcio de divisão de bens</h6>
-                        <h6>— Guarda civil de dependentes</h6>
-                        <h6>— Divórcio de divisão de bens</h6>
-                        <h6>— Guarda civil de dependentes</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--AREAS DE ATUACAO-->
-        <!-- <img src=" ./assets/img/escritorio.jpg" alt="" class="img-fluid"> -->
-        <!--SOBRE NÓS-->
-        <div id="sobre-nos">
-            <div class="row">
-                <div id="escritorio" class="col-md-6">
-                    <img src=" ./assets/img/escritorio.jpg" alt="" class="img-fluid">
-                </div>
-                <div id="about" class="col-md-6 ">
-                    <div class="p-5">
-                        <div class="bd"></div>
-                        <h2>Sobre o escritório</h2>
-                        <h5>Escritório Rezende Neiva advogados, desde 2015, referência em qualidade com ética,
-                            integridade,
-                            respeito aos clientes e colegas de profissão são valores inegociáveis para a Rezende Neiva
-                            Advogados, bem como a transparência na prestação dos serviços e exercício da atívidade
-                            jurídica
-                            em todos seguimentos do mercado</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--SOBRE NÓS-->
-
-        <!--EQUIPE-->
-        <div id="equipe">
-            <div class="container">
-                <div class="bd"></div>
-                <h2>Conheça a equipe</h2>
-                <div class="row pt-4">
-                    <div class="col-md-4">
-                        <img src="./assets/img/person1.jpg" alt="" class="img-fluid">
-                        <div class="pt-2">
-                            <h3>Flávio Neiva Rezende</h3>
-                            <h4>OAB-98.738</h4>
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus
-                                lobortis
-                                condimentum. Aliquam nonummy auctor massa."</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="./assets/img/person2.jpg" alt="" class="img-fluid">
-                        <div class="pt-2">
-                            <h3>Luciana Canela da Silva</h3>
-                            <h4>OAB-98.738</h4>
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus
-                                lobortis
-                                condimentum. Aliquam nonummy auctor massa."</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="./assets/img/person3.jpg" alt="" class="img-fluid">
-                        <div class="pt-2">
-                            <h3>Sérgio Pereira</h3>
-                            <h4>OAB-98.738</h4>
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus
-                                lobortis
-                                condimentum. Aliquam nonummy auctor massa."</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--EQUIPE-->
-
-        <!--BLOG-->
-        <div id="blog">
-            <div class="container">
-                <div class="bd"></div>
-                <div class="d-flex justify-content-between">
-                    <h2>Últimas do blog</h2>
-                    <div class="d-flex align-items-center">
-                        <a class="btn-custom" href="#" tabindex="-1" aria-disabled="true">Acesse o blog</a>
-                    </div>
-                </div>
-                <div class="row pt-4">
-                    <div class="col-md-4">
-                        <img src="./assets/img/blog1.png" alt="" class="img-fluid">
-                        <div class="pt-2">
-                            <h4>Medidas jurídicas que empresesas podem adotar durante a COVID-19</h4>
-                            <p>16 de Janeiro de 2021</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="./assets/img/blog2.jpg" alt="" class="img-fluid">
-                        <div class="pt-2">
-                            <h4>Dúvidas trabalhistas sobre a COVID-19; As 5 principais que você deve conhecer</h4>
-                            <p>16 de Janeiro de 2021</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="./assets/img/blog3.jpeg" alt="" class="img-fluid">
-                        <div class="pt-2">
-                            <h4>Medida provisória 936/2020 - Relação entre empregador e empregado</h4>
-                            <p>16 de Janeiro de 2021</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--BLOG-->
-
-        <!--CONTATO-->
-        <div id="contato">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="bd"></div>
-                    <h2>Entre em contato</h2>
-                    <form>
-                        <div class="form-group pt-2">
-                            <label for=" exampleFormControlSelect1">Assunto</label>
-                            <div class="pb-4" style="height: 50px;">
-                                <select class="wide" id="exampleFormControlSelect1">
-                                    <option>Consulta</option>
-                                    <option>Dúvidas</option>
-                                    <option>Outros</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group pb-2">
-                            <label for="exampleFormControlInput1" class="pb-2">Nome</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="name@example.com">
-                        </div>
-                        <div class="form-group pb-2">
-                            <label for="exampleFormControlInput1">Email</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                        </div>
-                        <div class="form-group pb-2">
-                            <label for="exampleFormControlInput1">Telefone</label>
-                            <input type="email" class="form-control" id="telefone">
-                        </div>
-                        <div class="form-group pb-2">
-                            <label for="exampleFormControlInput1">Celular</label>
-                            <input type="email" class="form-control" id="celular">
-                        </div>
-                        <div class="form-group pb-3">
-                            <label for="exampleFormControlTextarea1">Mensagem</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <div class="d-flex align-items-center" id="btn-enviar">
-                            <a class="btn-custom" id="btn-enviar" href="#" tabindex="-1" aria-disabled="true">Enviar</a>
-                        </div>
-                    </form>
-                </div>
-                <div id="info" class="col-md-4">
-                    <div class="pt-2 pb-2">
-                        <label for="">Telefone</label>
-                        <h4>(43) 3344-2630</h4>
-                    </div>
-                    <div class="pt-2 pb-2">
-                        <label for="">Whatsapp</label>
-                        <h4>(43) 99652-5073</h4>
-                    </div>
-                    <div class="pt-2 pb-2">
-                        <label for="">E-mail</label>
-                        <h4>contato@rezendeneiva.adv.br</h4>
-                    </div>
-                    <div class="pt-2 pb-2">
-                        <label for="">E-mail</label>
-                        <h4>contato@rezendeneiva.adv.br</h4>
-                    </div>
-                    <div class="pt-2 pb-2">
-                        <label for="">Endereço</label>
-                        <h4>Av. Ayrton Senna da Silva, 1005, Sala 1904, 19º Andar, Ed. Palhano Square Garden Gleba
-                            Palhano, Londrina-PR</h4>
-                    </div>
-                </div>
-                <div id="photo" class="col-md-3 pr-0">
-                </div>
-            </div>
-        </div>
-        <!--CONTATO-->
-
-        <!--FOOTER-->
-        <div id="footer">
-            <img src="./assets/img/logo.svg" alt="" class="pt-5">
-            <div class="pt-4 footer-custom-div">
-                <h5>(43) 3344-2630 | (43) 99652-5073</h5>
-                <h5>contato@rezendeneiva.adv.br</h5>
-            </div>
-            <div class="pt-4 footer-custom-div">
-                <h5>Av.Ayrton Senna da Silva, 1055, Sala 1904, 19º Andar</h5>
-                <h5>Ed. Palhano Square Garden, Gleba Palhano, Londrina-PR</h5>
-            </div>
-            <div class="pt-5 pb-3 footer-custom-div">
-                <h6>©2020 Rezende Neiva Advogados Associados. All Rights Reserved.</h6>
-                <h6>Desenvolvido por <b>Danyllo Lisboa</b></h6>
-            </div>
-        </div>
-        <!--SOBRE NÓS-->
     </div>
+    <!--AREAS DE ATUACAO-->
+    <div id="area-atuacao">
+        <div class="container">
+            <div class="bd"></div>
+            <h2 class="pb-4">Como podemos te ajudar?</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./assets/img/icone-direito-civel.svg" alt="" class="img-fluid icon">
+                    <h4>DIREITO CÍVEL</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <h6>— Divórcio de divisão de bens</h6>
+                    <h6>— Guarda civil de dependentes</h6>
+                    <h6>— Divórcio de divisão de bens</h6>
+                    <h6>— Guarda civil de dependentes</h6>
+                    <h6>— Divórcio de divisão de bens</h6>
+                    <h6>— Guarda civil de dependentes</h6>
+                    <h6>— Divórcio de divisão de bens</h6>
+                    <h6>— Guarda civil de dependentes</h6>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/img/icone-direito-do-consumidor.svg" alt="" class="img-fluid icon">
+                    <h4>DIREITO DO CONSUMIDOR</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <h6>— Divórcio de divisão de bens</h6>
+                    <h6>— Guarda civil de dependentes</h6>
+                    <h6>— Divórcio de divisão de bens</h6>
+                    <h6>— Guarda civil de dependentes</h6>
+                    <h6>— Divórcio de divisão de bens</h6>
+                    <h6>— Guarda civil de dependentes</h6>
+                    <h6>— Divórcio de divisão de bens</h6>
+                    <h6>— Guarda civil de dependentes</h6>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/img/icone-direito-empresarial.svg" alt="" class="img-fluid icon">
+                    <h4>DIREITO EMPRESARIAL</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <h6>— Divórcio de divisão de bens</h6>
+                    <h6>— Guarda civil de dependentes</h6>
+                    <h6>— Divórcio de divisão de bens</h6>
+                    <h6>— Guarda civil de dependentes</h6>
+                    <h6>— Divórcio de divisão de bens</h6>
+                    <h6>— Guarda civil de dependentes</h6>
+                    <h6>— Divórcio de divisão de bens</h6>
+                    <h6>— Guarda civil de dependentes</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--AREAS DE ATUACAO-->
+
+    <!--SOBRE NÓS-->
+    <div id="sobre-nos">
+        <div class="row">
+            <div id="escritorio" class="col-md-6">
+                <img src="./assets/img/imagem-escritorio-rezende-neiva-01.jpg" alt="" style="margin-right: 0;">
+            </div>
+            <div id="about" class="col-md-6 ">
+                <div style="padding: 7rem;">
+                    <div class="bd"></div>
+                    <h2 class="pb-3">Sobre o escritório</h2>
+                    <h5>Escritório Rezende Neiva advogados, desde 2015, referência em qualidade com ética,
+                        integridade,
+                        respeito aos clientes e colegas de profissão são valores inegociáveis para a Rezende Neiva
+                        Advogados, bem como a transparência na prestação dos serviços e exercício da atívidade
+                        jurídica
+                        em todos seguimentos do mercado</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SOBRE NÓS-->
+
+    <!--EQUIPE-->
+    <div id="equipe">
+        <div class="container">
+            <div class="bd"></div>
+            <h2>Conheça a equipe</h2>
+            <div class="row pt-4">
+                <div class="col-md-4">
+                    <img src="./assets/img/imagem-equipe-rezende-neiva-01.jpg" alt="" class="img-fluid">
+                    <div class="pt-2">
+                        <h3>Flávio Neiva Rezende</h3>
+                        <h3 class="oab">OAB-98.738</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/img/imagem-equipe-rezende-neiva-02.jpg" alt="" class="img-fluid">
+                    <div class="pt-2">
+                        <h3>Luciana da Silva</h3>
+                        <h3 class="oab">OAB-98.738</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/img/imagem-equipe-rezende-neiva-03.jpg" alt="" class="img-fluid">
+                    <div class="pt-2">
+                        <h3>Sergio Canella Pereira</h3>
+                        <h3 class="oab">OAB-98.738</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--EQUIPE-->
+
+    <!--BLOG-->
+    <div id="blog">
+        <div class="container">
+            <div class="bd"></div>
+            <div class="d-flex justify-content-between">
+                <h2>Últimas do blog</h2>
+                <div class="d-flex align-items-center">
+                    <a class="btn-custom" href="#" tabindex="-1" aria-disabled="true">Acesse o blog</a>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-md-4">
+                    <img src="./assets/img/blog1.png" alt="" class="img-fluid">
+                    <div class="pt-2 anuncio-blog">
+                        <h4>Medidas jurídicas que empresesas podem adotar durante a COVID-19</h4>
+                        <p>16 de Janeiro de 2021</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/img/blog2.jpg" alt="" class="img-fluid">
+                    <div class="pt-2 anuncio-blog">
+                        <h4>Dúvidas trabalhistas sobre a COVID-19; As 5 principais que você deve conhecer</h4>
+                        <p>16 de Janeiro de 2021</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/img/blog3.jpeg" alt="" class="img-fluid">
+                    <div class="pt-2 anuncio-blog">
+                        <h4>Medida provisória 936/2020 - Relação entre empregador e empregado</h4>
+                        <p>16 de Janeiro de 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--BLOG-->
+
+    <!--CONTATO-->
+    <!-- <div id="contato">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="bd"></div>
+                <h2>Entre em contato</h2>
+                <form>
+                    <div class="form-group pt-2">
+                        <label for=" exampleFormControlSelect1">Assunto</label>
+                        <div class="pb-4" style="height: 50px;">
+                            <select class="wide" id="exampleFormControlSelect1">
+                                <option>Consulta</option>
+                                <option>Dúvidas</option>
+                                <option>Outros</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group pb-2">
+                        <label for="exampleFormControlInput1" class="pb-2">Nome</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="form-group pb-2">
+                        <label for="exampleFormControlInput1">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    </div>
+                    <div class="form-group pb-2">
+                        <label for="exampleFormControlInput1">Telefone</label>
+                        <input type="email" class="form-control" id="telefone">
+                    </div>
+                    <div class="form-group pb-2">
+                        <label for="exampleFormControlInput1">Celular</label>
+                        <input type="email" class="form-control" id="celular">
+                    </div>
+                    <div class="form-group pb-3">
+                        <label for="exampleFormControlTextarea1">Mensagem</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="d-flex align-items-center" id="btn-enviar">
+                        <a class="btn-custom" id="btn-enviar" href="#" tabindex="-1" aria-disabled="true">Enviar</a>
+                    </div>
+                </form>
+            </div>
+            <div id="info" class="col-md-4">
+                <div class="pt-2 pb-2">
+                    <label for="">Telefone</label>
+                    <h4>(43) 3344-2630</h4>
+                </div>
+                <div class="pt-2 pb-2">
+                    <label for="">Whatsapp</label>
+                    <h4>(43) 99652-5073</h4>
+                </div>
+                <div class="pt-2 pb-2">
+                    <label for="">E-mail</label>
+                    <h4>contato@rezendeneiva.adv.br</h4>
+                </div>
+                <div class="pt-2 pb-2">
+                    <label for="">E-mail</label>
+                    <h4>contato@rezendeneiva.adv.br</h4>
+                </div>
+                <div class="pt-2 pb-2">
+                    <label for="">Endereço</label>
+                    <h4>Av. Ayrton Senna da Silva, 1005, Sala 1904, 19º Andar, Ed. Palhano Square Garden Gleba
+                        Palhano, Londrina-PR</h4>
+                </div>
+            </div>
+            <div id="photo" class="col-md-3 pr-0">
+            </div>
+        </div>
+    </div> -->
+    <!--CONTATO-->
+
+    <!--FOOTER-->
+    <div id="footer">
+        <img style="width: 280px;" src="./assets/img/logo-rezende-neiva-advogados-white.svg" alt=""
+            class="img-fluid pt-5 pb-3">
+        <div class="row p-3">
+            <div class="col-md-3">
+                <a href="">
+                    <img src="./assets/img/icone-facebook.svg" class="img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="">
+                    <img src="./assets/img/icone-instagram.svg" class="img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="">
+                    <img src="./assets/img/icone-whatsapp.svg" class="img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="">
+                    <img src="./assets/img/icone-linkedin.svg" class="img-fluid" alt="">
+                </a>
+            </div>
+        </div>
+
+
+        <div class="pt-4 footer-custom-div">
+            <h5>(43) 3344-2630 | (43) 99652-5073</h5>
+            <h5>contato@rezendeneiva.adv.br</h5>
+        </div>
+        <div class="pt-4 footer-custom-div">
+            <h5>Av.Ayrton Senna da Silva, 1055, Sala 1904, 19º Andar</h5>
+            <h5>Ed. Palhano Square Garden, Gleba Palhano, Londrina-PR</h5>
+        </div>
+        <div class="pt-5 pb-3 footer-custom-div">
+            <h6>©2020 Rezende Neiva Advogados Associados. All Rights Reserved.</h6>
+            <h6>Desenvolvido por <b>Danyllo Lisboa</b></h6>
+        </div>
+    </div>
+    <!--FOOTER-->
 
 
 

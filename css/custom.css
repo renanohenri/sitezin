@@ -1,13 +1,21 @@
 body ,html{
     height: 100%;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     color: #ffffff;
-    font-weight: 300;
-    font-size: 15px;
+    font-weight: 400;
+    font-size: 16px;
 }
 
-h1,h2,#equipe h3{
-    font-family: 'Lora', serif;
+p{
+    font-size: 16px;
+}
+
+h2{
+    font-size: 32;
+}
+
+h1,h2,h3{
+    font-family: 'Gelasio', serif;
 }
 
 #sobre-nos h5{
@@ -15,18 +23,48 @@ h1,h2,#equipe h3{
 }
 
 #header {
+    position: fixed;
     width: 100%;
     background-color:transparent;
-    transition: background ease-out 0.2s;
+    visibility: visible;
 }
 
-#header.ativo{
+#header-alt{
     position: fixed;
+    width: 100%;
     background-color: #ffffff;
-    color: #000;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
-    z-index: 99999;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 300ms;
 }
+
+#header-alt .nav-link{
+    font-weight: 300;
+    padding-right: 1rem;
+    color: #5a82a1;
+}
+
+#header-alt .btn-custom{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 63px;
+    padding-right: 63px;
+    border: 0.2px solid #5a82a1;
+    text-decoration: none;
+    color: #5a82a1;
+}
+
+#header-alt .btn-custom:hover{
+    color: #ffffff;
+    background-color: #5a82a1;
+    border-color: #5a82a1;
+}
+
+#header .navbar-collapse, #header-alt .navbar-collapse{
+    width: auto;
+}
+
 
 #header .navbar-toggler{
     border-color: #ffffff;
@@ -45,12 +83,14 @@ h1,h2,#equipe h3{
     width: auto;
 }
 
-.nav-link{
+#header .nav-link{
+    font-weight: 300;
+    padding-right: 1rem;
     color: #ffffff;
 }
 
 .nav-link:hover{
-    color: #ffffff;
+    color: #808183;
 }
 
 .btn-navbar{
@@ -58,10 +98,13 @@ h1,h2,#equipe h3{
 }
 
 .btn-custom{
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-bottom: 0.8rem;
-    padding-top: 0.8rem;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 63px;
+    padding-right: 63px;
+    /* padding-bottom: 0.8rem;
+    padding-top: 0.8rem; */
     border: 0.2px solid #ffffff;
     text-decoration: none;
     color: #ffffff;
@@ -69,15 +112,8 @@ h1,h2,#equipe h3{
 
 .btn-custom:hover{
     color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
-#header .nav-item{
-    border-bottom: solid 4px transparent;
-}
-
-#header .nav-item:hover{
-    border-bottom: solid 4px #ffffff;
+    background-color: #5a82a1;
+    border-color: #5a82a1;
 }
 
 #titulo{
@@ -88,16 +124,49 @@ h1,h2,#equipe h3{
 }
 
 #banner{
-    background-image: url(../assets/img/bg.jpg);
-    height: 100vh;
-    box-shadow: inset 300px 400px 60px rgba(0, 0, 0, 0.6);
+    background-image: url(../assets/img/banner-rezende-neiva.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 0;
 }
 
 #slider{
-    height: 85%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+#header{
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+#slider h1{
+    font-size: 38px;
+}
+
+#slider h1{
+    /* animation-delay: 1s; */
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+#slider a{
+    /* animation-delay: 2s; */
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      opacity: 0%;
+    }
+  
+    to {
+      opacity: 100%;
+    }
 }
 
 #area-atuacao, #equipe, #blog{
@@ -105,29 +174,32 @@ h1,h2,#equipe h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: #4F4F4F;
 }
 
-#area-atuacao .row{
-    font-weight: 100;
-}
-
 #area-atuacao p{
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
 }
 
-#area-atuacao i{
-    font-size: 6rem;
-    font-weight: 300;
-    color: #56C2FF;
+#area-atuacao h6{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#area-atuacao h4{
+    font-size: 24px;
+    font-weight: 200;
+    color: #808183;
 }
 
 .bd{
     margin-left: -1rem;
     width: 1rem;
     height: 1rem;
-    border-top: solid 3px #4F4F4F;
-    border-left: solid 3px #4F4F4F;
+    border-top: solid 2px #5a82a1;
+    border-left: solid 2px #5a82a1;
 }
 
 #sobre-nos{
@@ -135,7 +207,7 @@ h1,h2,#equipe h3{
 }
 
 #sobre-nos .row{
-    height: auto;
+    /* height: auto; */
     width: 100%;
     padding: 0;
 }
@@ -148,29 +220,68 @@ h1,h2,#equipe h3{
     padding: 5rem;
     color: #ffffff;
     /* font-weight: 300; */
-    background-color: #4F4F4F;
+    background-color: #5a82a1;
     display: flex;
     align-items: center;
     justify-content: center
 }
 
+#about h5{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 29px;
+
+}
+
 #sobre-nos .bd{
-    border-top: solid 3px #ffffff;
-    border-left: solid 3px #ffffff;
+    border-top: solid 2px #ffffff;
+    border-left: solid 2px #ffffff;
 }
 
 #equipe i{
     padding-left: 10px;
 }
 
+#equipe h3{
+    padding-top: 1rem;
+    font-size: 24px;
+    color: #3e474c;
+}
+
+#equipe .oab{
+    font-size: 24px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+    padding-top: 0;
+}
+
+#equipe{
+    padding-top: 2rem;
+}
+
 #blog .btn-custom{
-    border-color: #4F4F4F;
-    color: #4F4F4F;
+    border-color: #53748c;
+    color: #53748c;
 }
 
 #blog .btn-custom:hover{
-    color: #4F4F4F;
-    background-color: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    background-color: #53748c;
+    border-color: #53748c;
+}
+
+#blog h4{
+    font-size: 24px;
+    font-weight: 200;
+    color: #3e474c;
+}
+
+#blog .anuncio-blog{
+    width: 90%;
+}
+
+#blog .col-md-4:hover h4{
+    color:  #53748c;
 }
 
 #contato{
@@ -178,7 +289,7 @@ h1,h2,#equipe h3{
     display: flex;
     align-items: center;
     color: #4F4F4F;
-    background-color: #F2F6FD;
+    background-color: #F8F9FD;
 }
 
 #sobre-nos .row{
@@ -260,7 +371,7 @@ h1,h2,#equipe h3{
 
 #footer{
     height: auto;
-    background-color: #4F4F4F;
+    background-color: #3e474c;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -268,9 +379,16 @@ h1,h2,#equipe h3{
     font-weight: 300;
 }
 
-#footer h5, #footer h6{
-    color: #ADADAD;
-    font-weight: 300;
+#footer h5{
+    font-size: 16;
+    color: #bbbcbe;
+    font-weight: 400;
+}
+
+#footer h6{
+    font-size: 12;
+    color: #bbbcbe;
+    font-weight: 400;
 }
 
 #footer .footer-custom-div{
@@ -279,4 +397,16 @@ h1,h2,#equipe h3{
     align-items: center;
 }
 
+.icon{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 82px;
+    height: 82px;
+}
+
+
+#footer .col-md-3 img{
+    width: 20px;
+    height: 20px;
+}
 
